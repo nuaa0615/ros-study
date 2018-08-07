@@ -1,0 +1,15 @@
+创建节点步骤：
+  1.进入功能包目录，添加cpp文件
+  2.修改xml文件：
+    a.添加build_depend
+    b.添加exec_depend
+  3.修改txt文件：
+    a.修改find_package{},添加依赖
+    b.修改catkin_packeg{}
+    c.修改include_directories{}
+    d.添加add_executable(可执行文件名 源代码位置）
+    e.添加target_link_libraries(可执行文件名 ${catkin_LIBRARIES})
+    f.添加add_dependencies(可执行文件名 ${PROJECT_NAME}_gencpp) #服务编程时需要
+    g.添加add_dependencies(可执行文件名 ${PROJECT_NAME}_EXPORTED_TARGETS) #动作编程时需要
+  4.进入工作目录，运行命令: catkin_make
+  5.设置环境变量，运行命令: source devel/setup.bash  #若已添加变量到.bashrc文件，此步可以省略

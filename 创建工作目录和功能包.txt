@@ -1,0 +1,15 @@
+ros创建工作空间步骤：
+  1.创建工作目录及子目录src: mkdir -p ~/rosws/src
+  2.进入src目录: cd ~/rosws/src
+  3.运行命令: catkin_init_workspace
+  4.编译工作空间：
+      a.运行命令: cd ~/rosws/
+      b.运行命令: catkin_make
+  5.设置环境变量，运行命令: source devel/setup.bash
+
+创建功能包步骤：
+  1.进入src目录运行命令：catkin_create_pkg 包名 [depend1] [depend2] ...
+  2.编译功能包：
+      1.进入工作目录: cd ~/rosws
+      2.运行命令: catkin_make
+      3.设置环境变量，运行命令： source ~/rosws/devel/setup.bash

@@ -1,0 +1,13 @@
+pkg    功能包名
+type    可执行文件名
+name    运行时的节点名(将覆盖ros::init赋予的节点名)
+output  配置节点输出信息
+respawn = true 若为true，则当该节点停止时，程序会重启该节点
+required = true 若该节点停止，则会终止其他活跃节点并退出
+launch-prefix  该节点将在一个独立的终端中运行
+ns    设置默认命名空间
+remap    名称重映射
+include    包含其他launch文件
+param    ros节点参数设置，存储在参数服务器中
+rosparam  设置多个参数，通过加载文件实现
+arg    局部变量设置，仅限于launch文件内部使用

@@ -1,0 +1,11 @@
+创建action步骤:
+  1.进入功能包目录，添加action目录
+  2.进入action目录，添加action文件
+  3.修改xml文件:
+    a.添加build_depend
+    b.添加exec_depend
+  4.修改txt文件:
+    a.修改find_packeg{}，添加依赖
+    b.添加add_action_files(FILES action文件名)
+    c.添加generate_messages(DEPENDENCIES actionlib_msgs ....)
+  5.进入工作目录，运行命令: catkin_make
